@@ -52,4 +52,30 @@ export const Container = styled.div<{ active: boolean }>`
             background-color: ${p => p.active ? '#25cd89' : '#02044a'};
         }
     }
+
+    @media(max-width: 600px) {
+        a {
+            flex-direction: column;
+            
+            .info {                
+                margin: 0;
+    
+                .title {
+                    text-align: center;                    
+                }
+    
+                .desc {
+                    text-align: center;                    
+                }
+            }
+
+            .icon--area {
+                margin-top: 7px;
+            }
+
+            .point {
+                margin: 7px 0 0 0;
+            }
+        }
+    }
 `;

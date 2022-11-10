@@ -21,20 +21,19 @@ export const Container = styled.div`
         margin: 30px 0;
     }
 
-    label {
-        font-size: 13px;        
-    }
+    .info--area {
+        margin-bottom: 20px;
 
-    input {
-        margin: 10px 0 20px 0;
-        padding: 20px 10px;
-        border: 2px solid #25cd89;
-        border-radius: 10px;
-        color: #fff;
-        outline: 0;
-        font-size: 15px;
-        background-color: #02044a;
-    }
+        .field--name {
+            font-size: 13px;  
+            margin-bottom: 7px;      
+        }
+        .field--content {
+            font-size: 18px;
+            color: #25cd89;
+            font-weight: bold;
+        }
+    }    
 
     .buttons {
         display: flex;

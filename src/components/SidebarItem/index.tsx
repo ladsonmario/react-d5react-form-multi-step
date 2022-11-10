@@ -3,6 +3,7 @@ import * as C from './styled';
 import ProfileIcon from '../../svgs/profile.svg';
 import BookIcon from '../../svgs/book.svg';
 import MailIcon from '../../svgs/mail.svg';
+import OkIcon from '../../svgs/ok.svg';
 
 type Props = {
     title: string;
@@ -29,7 +30,10 @@ export const SidebarItem = ({ title, description, icon, path, active }: Props) =
                     }                      
                     {icon === 'mail' &&
                         <img src={MailIcon} alt="" />
-                    }                    
+                    }     
+                    {icon === 'ok' &&
+                        <img src={OkIcon} alt="" />
+                    }               
                 </div>
                 <div className="point"></div>
             </Link>

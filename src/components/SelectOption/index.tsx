@@ -4,14 +4,18 @@ type Props = {
     title: string;
     description: string;
     icon: string;
-    selected: boolean;
-    onClick: () => void;
+    selected?: boolean;
+    onClick?: () => void;
 }
 export const SelectOption = ({ title, description, icon, selected, onClick }: Props) => {
-    const handleClick = () => onClick();
+    const handleClick = () => {
+        if(onClick) {
+            onClick();
+        }        
+    }
 
     return (
-        <C.Container selected={selected} onClick={handleClick}>
+        <C.Container selected={selected as boolean} onClick={handleClick}>
             <div className="icon">{icon}</div>
             <div className="info">
                 <div className="title">{title}</div>

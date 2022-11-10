@@ -14,7 +14,8 @@ export enum FormActions {
     setName,
     setLevel,
     setEmail,
-    setGithub
+    setGithub,
+    setReset
 }
 
 const formReducer = (state: InitialDateType, action: ActionReducerType) => {
@@ -29,6 +30,10 @@ const formReducer = (state: InitialDateType, action: ActionReducerType) => {
             return { ...state, email: action.payload };
         case FormActions.setGithub:
             return { ...state, github: action.payload };
+        case FormActions.setReset:
+            let cloneState = { ...state };
+            cloneState = action.payload;        
+            return cloneState;
         default:
             return state;
     }

@@ -27,4 +27,20 @@ export const Container = styled.div`
             }
         }
     }
+
+    @media(max-width: 600px) {
+        .area {
+            .steps {
+
+                .side--bar {
+                    width: auto;
+                    padding: 0 5px;
+                }
+
+                .page {
+                    padding: 40px 10px 0 10px;
+                }
+            }
+        }        
+    }
 `;

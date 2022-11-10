@@ -39,4 +39,20 @@ export const Container = styled.div<{ selected: boolean }>`
             color: #b8b8d4;
         }
     }
+
+    @media(max-width: 600px) {
+        flex-direction: column;
+
+        .info {
+            margin: 0;
+    
+            .title {
+                text-align: center;
+            }
+    
+            .desc {
+                text-align: center;                
+            }
+        }
+    }
 `;

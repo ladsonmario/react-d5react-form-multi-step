@@ -39,6 +39,14 @@ export const Theme = ({ children }: Props) => {
                             path="/step3"
                             active={state.currentStep === 3}
                         />
+
+                        <SidebarItem 
+                            title="Verificar" 
+                            description="Confirmar dados" 
+                            icon="ok" 
+                            path="/step4"
+                            active={state.currentStep === 4}
+                        />
                     </div>
                     <div className="page">{children}</div>
                 </div>

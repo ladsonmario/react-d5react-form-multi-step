@@ -62,4 +62,10 @@ export const Container = styled.div`
             background: none;
         }
     }
+
+    @media(max-width: 600px) {
+        .buttons {
+            flex-direction: column-reverse;
+        }
+    }
 `;
